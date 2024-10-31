@@ -35,7 +35,7 @@ using namespace std;
 // }
 
 // Operadores relacionales
-int main()
+/* int main()
 {
     cout << (34 > 35) << endl;
     cout << (34 < 35) << endl;
@@ -48,5 +48,26 @@ int main()
     cout << ((34 == 34) && (20 < 30)) << endl;
     cout << ((20 < 30) || (10 > 20)) << endl;
     cout << !(20 == 20) << endl;
+    return 0;
+} */
+
+// Operadores Estatuto Condicional
+int main()
+{
+    int a;
+    cout << "Escribe un numero: " << endl;
+    cin >> a;
+    if (a > 3)
+    {
+        cout << "a es mayor a 3" << endl;
+    }
+    else if (a == 3)
+    {
+        cout << "a es igual a 3" << endl;
+    }
+    else
+    {
+        cout << "a es menor a 3" << endl;
+    }
     return 0;
 }
