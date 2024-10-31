@@ -9,7 +9,7 @@ int main()
     cin >> numero;
     cout << "Dame una palabra: ";
     cin >> palabra;
-    cout << "El numero es: " << numero << "La palabra es: "
+    cout << "El numero es: " << numero << " La palabra es: "
          << palabra << endl;
     return 0;
 }
