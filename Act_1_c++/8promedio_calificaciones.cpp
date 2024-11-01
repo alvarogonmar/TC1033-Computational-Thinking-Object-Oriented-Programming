@@ -19,6 +19,7 @@ int main()
     cin >> c3;
 
     promedio = (c1 + c2 + c3) / 3;
+    cout.precision(2);
     cout << "El promedio de: " << alumno << " es: " << promedio << endl;
     return 0;
 }
