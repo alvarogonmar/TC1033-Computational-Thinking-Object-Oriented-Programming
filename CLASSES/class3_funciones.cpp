@@ -43,7 +43,7 @@ int main()
 } */
 
 // Caso 2: Sin parametros de entrada
-int Suma() // DECLARAR Y PONER LA FUNCION
+/*int Suma() // DECLARAR Y PONER LA FUNCION
 {
     int a, b, c;
     cout << "Dame un valor para a: ";
@@ -57,5 +57,41 @@ int main()
 {
     int resultado = Suma(); // Llamar la funcion
     cout << resultado << endl;
+    return 0;
+}  */
+
+// Caso 3
+/* void Suma(int a, int b)
+{
+    int c;
+    c = a + b;
+    cout << c << endl;
+}
+
+int main()
+{
+    int a, b;
+    cout << "Dame un valor para a: ";
+    cin >> a;
+    cout << "Dame un valor para b: ";
+    cin >> b;
+    Suma(a, b);
+    return 0;
+} */
+
+// Caso 4 No hay ni entradas ni salidas
+void Suma()
+{
+    int a, b, c;
+    cout << "Dame un valor para a: ";
+    cin >> a;
+    cout << "Dame un valor para b: ";
+    cin >> b;
+    c = a + b;
+    cout << c << endl;
+}
+int main()
+{
+    Suma();
     return 0;
 }
