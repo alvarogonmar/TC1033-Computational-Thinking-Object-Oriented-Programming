@@ -13,10 +13,12 @@ int main()
     cout << "Dame un valor para b: ";
     cin >> b;
     int resultado = Suma(a, b); // Llamar la funcion
+    cout << resultado << endl;
     return 0;
 }
 int Suma(int a, int b)
 {
     int c;
     c = a + b;
+    return c;
 }
