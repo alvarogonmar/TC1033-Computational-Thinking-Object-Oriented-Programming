@@ -1,8 +1,12 @@
+// Actividad 2
+// Equipo: Alvaro Gonzalez Martinez(A01646343) y Karlo Sebastian Cadena Cota (A00842489)
+
 #include <iostream>
-#include <iomanip> // Para configurar el formato de la salida
+#include <iomanip>
 #include <cmath>
 #include <cstdlib>
 #include <ctime>
+#include <vector>
 using namespace std;
 
 // 1
@@ -26,6 +30,9 @@ int numRandom, contador = 1, intento;
 double celsius;
 int conver;
 double incremento;
+
+// 7
+int a = 1, d = 3, n_1 = 25;
 
 // Variable
 int op;
@@ -152,9 +159,66 @@ int conversionCelsiusFarenheit()
     return 0;
 }
 
+// Problema 7
+void serieAritmetica()
+{
+    int suma = 0;
+
+    for (int i = 1; i <= n_1; i++)
+    {
+        int termino = a + (i - 1) * d;
+        cout << "Termino " << i << ": " << termino << endl;
+        suma += termino;
+    }
+    cout << "Valor total de la serie: " << suma << endl;
+}
+
+// Problema 8
+
+void calcularMedias()
+{
+    vector<double> numeros;
+    double numero;
+
+    // Solicitar al usuario los números
+    cout << "Introduce un número (0 para terminar): ";
+    while (cin >> numero && numero != 0)
+    {
+        numeros.push_back(numero);
+        cout << "Introduce otro número (0 para terminar): ";
+    }
+
+    // Verificar si se ingresaron números válidos
+    if (numeros.empty())
+    {
+        cout << "No se introdujeron números válidos." << endl;
+        return;
+    }
+
+    // Calcular la media geométrica
+    double producto = 1.0;
+    for (double n_2 : numeros)
+    {
+        producto *= n_2;
+    }
+    double mediaGeometrica = pow(producto, 1.0 / numeros.size());
+
+    // Calcular la media armónica
+    double sumaInversos = 0.0;
+    for (double n_2 : numeros)
+    {
+        sumaInversos += 1.0 / n_2;
+    }
+    double mediaArmonica = numeros.size() / sumaInversos;
+
+    // Mostrar los resultados
+    cout << "Media geométrica: " << mediaGeometrica << endl;
+    cout << "Media armónica: " << mediaArmonica << endl;
+}
+
 int main()
 {
-    cout << "Ingresa el problema que deseas resolver \n1 operaNumeros \n2 numeroImpar \n3 sumaPares \n4 mediaAritmetica \n5 numeroMagico \n6 conversionCelsiusFarenheit \n7 Terminar \n Tu opcion:  ";
+    cout << "Ingresa el problema que deseas resolver \n1 operaNumeros \n2 numeroImpar \n3 sumaPares \n4 mediaAritmetica \n5 numeroMagico \n6 conversionCelsiusFarenheit \n7 serieAritmetica \n8 mediasGeometricaArmonica \n9 Terminar \n Tu opcion:  ";
     cin >> op;
     if (op == 1)
     {
@@ -186,6 +250,16 @@ int main()
         return 0;
     }
     else if (op == 7)
+    {
+        serieAritmetica();
+        return 0;
+    }
+    else if (op == 8)
+    {
+        calcularMedias();
+        return 0;
+    }
+    else if (op == 9)
     {
         return 0;
     }
