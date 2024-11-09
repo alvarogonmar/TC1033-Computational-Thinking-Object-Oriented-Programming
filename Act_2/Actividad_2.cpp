@@ -34,6 +34,10 @@ double incremento;
 // 7
 int a = 1, d = 3, n_1 = 25;
 
+// 8
+vector<double> numeros;
+double numero;
+
 // Variable
 int op;
 // Problema 1
@@ -177,8 +181,6 @@ void serieAritmetica()
 
 void calcularMedias()
 {
-    vector<double> numeros;
-    double numero;
 
     // Solicitar al usuario los números
     cout << "Introduce un número (0 para terminar): ";
