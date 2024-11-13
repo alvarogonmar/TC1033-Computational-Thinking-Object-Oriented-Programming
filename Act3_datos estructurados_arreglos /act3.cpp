@@ -40,10 +40,34 @@ void problema_3()
     float promedio = static_cast<float>(suma) / 50;
     cout << "El promedio de los valores aleatorios es: " << fixed << setprecision(2) << promedio << endl;
 }
+
+void problema_4()
+{
+    int array4[25];
+    int valor_max = 0;
+    int posicion_max = 0;
+    srand(time(0));
+
+    for (int i = 0; i < 25; i++)
+    {
+        array4[i] = rand() % 500 + 1;
+        if (array4[i] > valor_max)
+        {
+            valor_max = array4[i];
+            posicion_max = i;
+        }
+    }
+    cout << "El valor mas grande del array es: " << valor_max << " en la posicion: " << posicion_max << endl;
+    for (int i = 0; i < 25; i++)
+    {
+        cout << "Valor: " << array4[i] << " - Posicion: " << i << endl;
+    }
+}
 int main()
 {
     problema_1();
     problema_2();
     problema_3();
+    problema_4();
     return 0;
 }
