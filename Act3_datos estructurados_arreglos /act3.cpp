@@ -1,4 +1,6 @@
 #include <iostream>
+#include <cstdlib> // Para rand y srand
+#include <iomanip> // Para std::setprecision
 using namespace std;
 
 int problema_1()
@@ -23,9 +25,25 @@ void problema_2()
     }
     cout << "El total de la suma de tus elementos es igual a: " << suma << endl;
 }
+
+void problema_3()
+{
+    int array3[50];
+    int suma = 0;
+    srand(time(0));
+
+    for (int i = 0; i < 50; i++)
+    {
+        array3[i] = rand() % 200 + 1;
+        suma += array3[i];
+    }
+    float promedio = static_cast<float>(suma) / 50;
+    cout << "El promedio de los valores aleatorios es: " << fixed << setprecision(2) << promedio << endl;
+}
 int main()
 {
     problema_1();
     problema_2();
+    problema_3();
     return 0;
 }
