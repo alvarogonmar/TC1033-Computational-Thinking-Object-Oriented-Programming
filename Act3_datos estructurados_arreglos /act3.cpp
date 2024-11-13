@@ -63,11 +63,28 @@ void problema_4()
         cout << "Valor: " << array4[i] << " - Posicion: " << i << endl;
     }
 }
+void problema_5()
+{
+    string frase = "Pensamiento Computacional Orientado a Objetos";
+
+    int len = 0;
+    for (; frase[len] != '\0'; len++)
+    {
+    }
+    cout << "El tamanio de  la frase es: " << len << endl;
+
+    for (int i = 0; i < len; i++)
+    {
+        cout << frase[i] << endl;
+    }
+}
+
 int main()
 {
     problema_1();
     problema_2();
     problema_3();
     problema_4();
+    problema_5();
     return 0;
 }
