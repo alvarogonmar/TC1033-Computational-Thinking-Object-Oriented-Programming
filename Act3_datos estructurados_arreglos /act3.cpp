@@ -11,8 +11,21 @@ int problema_1()
     return 0;
 }
 
+void problema_2()
+{
+    int array2[10] = {};
+    int suma = 0;
+    for (int i = 0; i < 10; i++)
+    {
+        cout << "Ingrese un valor para el indice: " << i << endl;
+        cin >> array2[i];
+        suma += array2[i];
+    }
+    cout << "El total de la suma de tus elementos es igual a: " << suma << endl;
+}
 int main()
 {
     problema_1();
+    problema_2();
     return 0;
 }
