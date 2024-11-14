@@ -62,7 +62,7 @@ int main()
     return 0;
 }*/
 
-int main()
+/* int main()
 {
     char Palabras[] = {'H', 'O', 'L', 'A'};    // Array de CARACTERES
     char texto[] = {'H', 'O', 'L', 'A', '\0'}; // Cadena de caracteres string
@@ -78,4 +78,14 @@ int main()
     cout << nombre << " " << apellido;
 
     return 0;
-}
+} */
+
+// NO FUNCIONA !!!!!!!
+/* int main(int f, char *ArgM[])
+{
+    cout << ArgM[0] << endl;
+    cout << ArgM[1] << endl;
+    cout << ArgM[2] << endl;
+    cout << ArgM[3] << endl;
+    return 0;
+} */
