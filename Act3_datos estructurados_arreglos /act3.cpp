@@ -1,3 +1,5 @@
+// Alvaro Gonzalez Martinez A016463431
+
 #include <iostream>
 #include <cstdlib> // Para rand y srand
 #include <iomanip> // Para poner solo los decimales que quiero std::setprecision
@@ -27,6 +29,13 @@ void problema_2() // Funcion que nos permite ingresar valores en un array y lueg
         suma += array2[i];                                        // Sumar el valor al total
     }
     cout << "El total de la suma de tus elementos es igual a: " << suma << endl; // Imprimir en pantalla el total de la suma
+    cout << "Contenido del array: ";
+    for (int i = 0; i < 10; i++) // for para iterar cada elemento del array
+    {
+        cout << array2[i] << " "; // imprimir el contenido del array separado por un espacio
+    }
+    cout << endl; // cout para salto de linea al terminar de imprimir el contenido del array
+
     // Caso de prueba: Se pide que el usario ingrese un numero por cada indice (0-9)
     // Si el usuario introduce los valores (10,20,30,40,50,60,70,80,90,100) la suma total deberia ser 550
 }
