@@ -1,4 +1,4 @@
-#include <felino.h>
+#include "felino.h"
 
 int main()
 {
@@ -12,3 +12,7 @@ int main()
     Tigre.saltar();
     return 0;
 }
+
+// Para correrlo:
+// Poner los tres archivos g++ felino.h felino.cpp main.cpp
+// correr el main.out : ./main.out
