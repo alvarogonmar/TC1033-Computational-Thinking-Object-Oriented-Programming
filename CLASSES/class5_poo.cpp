@@ -29,7 +29,7 @@ felino::felino(int peso1, int tamanio1, int patas1, int bigotes1, string color1,
 
 void felino::dormir()
 {
-    cout << "El felino de " << peso << " esta durmiendo" << endl;
+    cout << "El felino de " << peso << " kg esta durmiendo" << endl;
 }
 void felino::comer()
 {
@@ -46,4 +46,12 @@ void felino::correr()
 void felino::saltar()
 {
     cout << "El felino salta " << endl;
+}
+
+int main()
+{
+    // Instancear la clase. Crear el objeto
+    felino Gato = felino(12, 60, 4, 8, "naranja", "retractiles");
+    Gato.dormir();
+    return 0;
 }
