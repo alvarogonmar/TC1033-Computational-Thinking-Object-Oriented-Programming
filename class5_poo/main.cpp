@@ -10,9 +10,12 @@ int main()
     felino Tigre = felino(700, 100, 4, 20, "naranja", "retractile");
     Tigre.dormir();
     Tigre.saltar();
+    cout << Tigre.getColor() << endl;
+    Tigre.setColor("Negro");
+    cout << Tigre.getColor() << endl;
     return 0;
 }
 
 // Para correrlo:
-// Poner los tres archivos g++ felino.h felino.cpp main.cpp
+// Poner los tres archivos g++ felino.h felino.cpp main.cpp -o main
 // correr el main.out : ./main.out

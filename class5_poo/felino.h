@@ -15,4 +15,6 @@ public: // Metodos
     void cazar();
     void correr();
     void saltar();
+    void setColor(string); // Modificar datos
+    string getColor();     // Consultar datos
 };

@@ -31,3 +31,11 @@ void felino::saltar()
 {
     cout << "El felino salta " << endl;
 }
+void felino::setColor(string Color1)
+{
+    color = Color1;
+}
+string felino::getColor()
+{
+    return color;
+}
