@@ -23,3 +23,32 @@ public:
         cout << "Tiene " << CantLlantas << " marca" << marcaLlanta << " de " << medida << "pulgadas " << " con una presion de " << presion << endl;
     }
 };
+
+class Motor
+{
+private:
+    int HP;
+
+public:
+    Motor(int Caballos)
+    {
+        HP = Caballos;
+    }
+    void infoMotor()
+    {
+        cout << "Tiene " << HP << " caballos de fuerza" << endl;
+    }
+};
+
+// Clase contenedora
+class Automovil
+{
+private:
+    string marca;
+    Motor motor;
+    Llantas llantas;
+
+public:
+    // Constructor
+    Automovil(int Cll, int medidas, string Mllantas, int P, int CF, string Auto) : marca(Auto), motor(CF), llantas(Cll, medidas, Mllantas, P) {}
+};
