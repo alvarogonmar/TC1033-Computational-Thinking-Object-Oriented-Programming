@@ -51,4 +51,17 @@ private:
 public:
     // Constructor
     Automovil(int Cll, int medidas, string Mllantas, int P, int CF, string Auto) : marca(Auto), motor(CF), llantas(Cll, medidas, Mllantas, P) {}
+    void Informacion()
+    {
+        cout << "El auto es: " << marca << endl;
+        motor.infoMotor();
+        llantas.InfoLlantas();
+    }
 };
+
+int main()
+{
+    Automovil A = Automovil(4, 27, "Michelin", 33, 1000, "Tesla");
+    A.Informacion();
+    return 0;
+}
