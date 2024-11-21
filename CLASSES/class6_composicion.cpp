@@ -20,7 +20,7 @@ public:
     }
     void InfoLlantas()
     {
-        cout << "Tiene " << CantLlantas << " marca" << marcaLlanta << " de " << medida << "pulgadas " << " con una presion de " << presion << endl;
+        cout << "Tiene " << CantLlantas << " llantas marca " << marcaLlanta << " de " << medida << "pulgadas " << " con una presion de " << presion << endl;
     }
 };
 
